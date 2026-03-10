@@ -38,18 +38,6 @@ The repository can be used with tools such as:
 
 ---
 
-## Project Structure
-sample-node-app
-│
-├── app.js
-├── test.js
-├── package.json
-├── Dockerfile
-├── Jenkinsfile
-├── .github/workflows/ci.yml
-├── .gitlab-ci.yml
-└── .circleci/config.yml
-
 ### File Descriptions
 
 | File | Description |
