@@ -1,0 +1,24 @@
+stages:
+  - install
+  - test
+  - build
+
+install_dependencies:
+  stage: install
+  image: node:18
+  script:
+    - npm install
+
+run_tests:
+  stage: test
+  image: node:18
+  script:
+    - npm test
+
+build_docker_image:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t sample-node-app .
